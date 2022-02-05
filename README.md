@@ -40,8 +40,7 @@ En la linea de comandos (cmd):
 
 en el cmd: solana-keygen new --outfile ~/.config/solana/devnet.json  
 
-resultado: 
-pubkey: Er1Tm8zqaMLxAyuCSWm4qZykgbYxFZUEHsvdBsrhKJ9a
+resultado: pubkey: Er1Tm8zqaMLxAyuCSWm4qZykgbYxFZUEHsvdBsrhKJ9a
 ======================================================================================
 Save this seed phrase and your BIP39 passphrase to recover your new keypair:
 bachelor accuse excite timber put reopen because strategy final fetch together illegal
