@@ -76,7 +76,7 @@ Ejemplo: (Lee más aquí https://docs.metaplex.com/candy-machine-v2/configuratio
   "endSettings": null, 
   "whitelistMintSettings": null, 
   "hiddenSettings": null, 
-  "storage": "arweave-sol",
+  "storage": "arweave",
   "ipfsInfuraProjectId": null, 
   "ipfsInfuraSecret": null, 
   "awsS3Bucket": null, 
