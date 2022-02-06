@@ -125,3 +125,39 @@ ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_upload -e 
 # PASO 11: Comprobar nuestro balance.
 Veamos como cambia nuestro balance en Devnet después de la subida.
 En el CMD: solana balance
+
+# PASO 12: Cambiar el Cluster de Solana a la  Mainnet.
+Vamos a empezar a trabajar en la Mainnet ahora y debemos apuntar hacia ella. 
+Para eso: 
+En el cmd: solana config set --url https://api.mainnet-beta.solana.com
+
+# PASO 13: Crear la candy machine + enviar SOL de mainnet a nuestro wallet.
+Como hicimos previamente en la Devnet, vamos a crear una Candy Machine ahora en mainnet. Ahora ya no nos sirve el balance en devnet y deberemos enviarle SOL "real" a nuestro wallet.
+
+En el cmd: 
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload -e mainnet-beta -k ~/.config/solana/devnet.json -cp ~\metaplex\js\packages\cli\config.json -c example ~\metaplex\js\packages\cli\assets
+
+# PASO 14: Mintear un token manualmente. (Opcional)
+Mintear un token a través del CMD si queremos comprobar que todo está bien.
+
+# PASO 15: Página web del minteo.
+Con el CMV2 esto es más sencillo que nunca, nos dan una web de mint preestableciida.
+
+Seguiremos: https://docs.metaplex.com/candy-machine-v2/mint-frontend y probaremos a mintear en localhost. Tratad de cambiar de wallet para hacer el mint y no hacerlo desde el wallet que creó la CM. Luego esto lo podremos subir a nuestro dominio y ya tendríamos la web del mint lista.
+
+# PASO 16: SOLD OUT + MINT IDS + MARKETPLACES
+Una vez hayamos hecho el sold out, cogeremos todos los Mint IDs de nuestra colección. Podemos usar una de tantas herramientas que hay en este paso:
+
+https://www.sol-nft.tools/get-mints 
+https://github.com/samuelvanderwaal/metaboss
+https://github.com/ilmoi/awesome-solana-nfts
+https://tools.abstratica.art/
+
+Una vez tengamos las listas de nuestros Mint IDs, esto será lo que les daremos a los marketplaces como Magic Eden, Solanart... para que ellos listen y verifiquen vuestra colección.
+
+
+Eso sería todo para el proceso de subida de vuestra colección a la red. Será más rápida o lenta según cada colección y tal vez alguno deba hacer algún paso más o hacer algún paso diferente. Nosotros lo hemos hecho de la manera más básica posible pero que debería ser suficiente para la gran mayoría de colecciones.
+
+
+
+
