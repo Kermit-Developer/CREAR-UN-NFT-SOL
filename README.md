@@ -145,6 +145,15 @@ Con el CMV2 esto es más sencillo que nunca, nos dan una web de mint preestablec
 
 Seguiremos: https://docs.metaplex.com/candy-machine-v2/mint-frontend y probaremos a mintear en localhost. Tratad de cambiar de wallet para hacer el mint y no hacerlo desde el wallet que creó la CM. Luego esto lo podremos subir a nuestro dominio y ya tendríamos la web del mint lista.
 
+REACT_APP_CANDY_MACHINE_ID=<CpdxmrRnxNNaBkCUJyAvYyFjBe42RzeTtngTpQSUfPBu>
+
+REACT_APP_SOLANA_NETWORK=mainnet-beta
+REACT_APP_SOLANA_RPC_HOST=https://api.mainnet-beta.solana.com
+
+en la cmd:
+cd ~/metaplex/js/packages/candy-machine-ui
+yarn install && yarn start
+
 # PASO 16: SOLD OUT + MINT IDS + MARKETPLACES
 Una vez hayamos hecho el sold out, cogeremos todos los Mint IDs de nuestra colección. Podemos usar una de tantas herramientas que hay en este paso:
 
